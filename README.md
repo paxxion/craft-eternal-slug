@@ -51,6 +51,11 @@ This setting is **global** and applies **retroactively** to existing redirects.
 
 You can download an **Excel (.xlsx)** file containing the list of all currently active redirects.
 
+#### Url History UI Element
+
+The **Url History UI element** can be added to the **Field Layout** of a **Entry Type**.  
+It provides a record of all URL changes associated with an entry.
+
 ## Support
 
 For questions, issues, or feature requests, please visit the [project repository on GitHub](https://github.com/paxxion/craft-eternal-slug) and open a new **issue**.
