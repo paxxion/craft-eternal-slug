@@ -1,6 +1,6 @@
 {
   "name": "paxxion/craft-eternal-slug",
-  "description": "Automatic redirection on slug change",
+  "description": "Automatic redirects on entry slugs changes or entries position change in a Structure",
   "type": "craft-plugin",
   "license": "proprietary",
   "support": {
