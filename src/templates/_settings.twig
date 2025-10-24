@@ -1,0 +1,40 @@
+{% import '_includes/forms.twig' as forms %}
+
+<main class="flex-fields">
+    <div class="width-50">
+        <h2>{{ 'HTTP status code'|t('eternal-slug') }}</h2>
+        <p>{{ 'HTTP status code to use for redirects'|t('eternal-slug') }}</p>
+        <div class="flex-fields">
+            <div class="field width-50">
+                {{
+                    forms.select({
+                        label: 'Redirect HTTP Code',
+                        name: 'redirectHttpCode',
+                        options: [
+                            {
+                                label: '301',
+                                value: 301
+                            },
+                            {
+                                label: '302',
+                                value: 302
+                            },
+                        ],
+                        value: settings.redirectHttpCode,
+                    })
+                }}
+            </div>
+        </div>
+    </div>
+    <div class="width-50">
+        <h2>{{ 'Export redirects'|t('eternal-slug') }}</h2>
+        <p>{{ 'Export an excel file with the a snapshot of current redirects'|t('eternal-slug') }}</p>
+        <div class="flex-field">
+            <div class="field width-50">
+                <a href="{{ url('eternal-slug/export') }}" target="_blank" class="btn submit">
+                    {{ "Export"|t('eternal-slug') }}
+                </a>
+            </div>
+        </div>
+    </div>
+</main>

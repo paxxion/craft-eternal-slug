@@ -1,0 +1,41 @@
+{
+  "name": "paxxion/craft-eternal-slug",
+  "description": "Automatic redirection on slug change",
+  "type": "craft-plugin",
+  "license": "proprietary",
+  "support": {
+    "email": "web@paxxion.com",
+    "issues": "https://github.com/paxxion/craft-eternal-slug/issues?state=open",
+    "source": "https://github.com/paxxion/craft-eternal-slug",
+    "docs": "https://github.com/paxxion/craft-eternal-slug",
+    "rss": "https://github.com/paxxion/craft-eternal-slug/releases.atom"
+  },
+  "require": {
+    "php": ">=8.2",
+    "craftcms/cms": "^5.8.0",
+    "nesbot/carbon": "^3.10",
+    "phpoffice/phpspreadsheet": "^5.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "paxxion\\crafteternalslug\\": "src/"
+    }
+  },
+  "extra": {
+    "handle": "eternal-slug",
+    "name": "Eternal Slug",
+    "developer": "Paxxion",
+    "documentationUrl": "https://github.com/paxxion/craft-eternal-slug",
+    "class": "paxxion\\crafteternalslug\\EternalSlug"
+  },
+  "config": {
+    "sort-packages": true,
+    "platform": {
+      "php": "8.2"
+    },
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
+  }
+}
