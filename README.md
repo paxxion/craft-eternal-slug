@@ -1,6 +1,16 @@
 # Eternal Slug
 
-**Eternal Slug** is a Craft CMS plugin that automatically generates redirects whenever entry slugs are changed or when entries are moved within a Structure.
+When you manually change an entry’s slug or move it within a Structure, Craft CMS updates the URL — but the old one instantly stops working.
+As a result, any user or search engine visiting the previous link will land on a **404 Not Found** page.
+This not only hurts user experience but can also cause **SEO value loss** and **broken backlinks**.
+
+**Eternal Slug** fixes this automatically.
+
+Whenever an entry’s slug changes or its position in a Structure is updated, Eternal Slug instantly creates a **301 redirect** from the old URL to the new one and no manual action is required.
+
+Your visitors and search engine crawlers (like Googlebot) are seamlessly guided to the correct page, preserving both **traffic** and **ranking signals**.
+
+**Keep your URLs alive with Eternal Slug**
 
 ## Requirements
 
